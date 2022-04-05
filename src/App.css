@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar-nav {
+  padding: 30px 0;
+}
+.customNav {
+  justify-content: flex-end;
+}
+
+.customNav .navbar-nav a {
+  margin: 0 25px;
+  font-weight: bold;
+  color: #333 !important;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #e60079;
+}
+
+.calContainer {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 140px);
+}
+
+.customCard {
+  background: #ffffff;
+  box-shadow: 0px 3px 90px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 50px;
+}
+
+/* .customCard>div:nth-of-type(1)>div{
+  height: 70px;
+  padding: 10px;
+} */
+
+.imgBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.currencyDisplay {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-decoration: none;
+  color: #000;
+  margin-top: 30px;
+}
+
+.currencyDisplay:hover {
+  color: #333;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px 0;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 3px 90px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.inputContainer input {
+  border: none !important;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.inputContainer .css-1s2u09g-control {
+  border: none !important;
+}
+
+.inputContainer .css-1hb7zxy-IndicatorsContainer {
+  padding: 0 30px 0 0;
+}
+
+.inputContainer .css-tlfecz-indicatorContainer {
+  padding-left: 15px;
+}
+
+.inputContainer .css-1okebmr-indicatorSeparator {
+  background-color: #eee;
+}
+
+.convert {
+  background: #e60079;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 62px;
+  line-height: 62px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+/*about us styles*/
+
+.about{
+  background: #ffffff;
+  box-shadow: 0px 3px 90px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 2.5em;
+  max-width: 960px;
+  width: 100%;
+  margin: 3em auto;
+}
+
+.about h1 {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em 0 0 0;
+}
+
+.about h5,h6{
+  margin: 20px 0;
+}
+
+.about p {
+  margin: 1.5em 0;
+  line-height: 2;
+  /* font-weight: 500; */
+}
+
+@media screen and (max-width: 600px){
+  .logo {
+    font-size: 20px;
+  }
+  .imgBlock{
+    display: none;
+  }
+
+  .inputContainer{
+    grid-template-columns: 40% 60%;
+  }
+
+  .inputContainer .css-1hb7zxy-IndicatorsContainer{
+    padding: 0;
+  }
+
+  .customCard{
+    padding: 10px;
+  }
+
+  .currencyDisplay{
+    font-size: 20px;
+  }
+}
